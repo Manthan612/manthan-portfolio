@@ -82,8 +82,6 @@ api.get('/projects/')
 
   return (
     <>
-     <link rel="icon" type="image/png" href="%BASE_URL%favicon.png" />
-      <title>Manthan | Full Stack Developer</title>0
 
       <nav>
         <h2>Manthan<span>.</span></h2>
