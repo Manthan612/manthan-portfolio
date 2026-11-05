@@ -178,25 +178,32 @@ nav a {
 
 
 
-
-/* Responsive Design */
 @media (max-width: 768px) {
   nav {
-    padding: 20px 5%;
-    flex-direction: column;
-    gap: 20px;
+    padding: 18px 4%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav h2 {
+    font-size: 22px;
+    white-space: nowrap;
   }
 
   nav div {
-    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   nav a {
-    font-size: 14px;
+    font-size: 12px;
   }
-
+}
   #home {
     padding: 60px 6%;
     min-height: 75vh;
