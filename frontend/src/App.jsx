@@ -241,7 +241,9 @@ api.get('/projects/')
 
       <div className="contact-detail">
         <Mail />
+        <a href="mailto:manthan6121@gmail.com">  
         <span>manthan6121@gmail.com</span>
+        </a>
       </div>
 
       <div className="contact-detail">
