@@ -178,13 +178,16 @@ nav a {
 
 
 
+
+/* Mobile Navbar */
 @media (max-width: 768px) {
   nav {
     padding: 18px 4%;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
 
   nav h2 {
@@ -196,14 +199,34 @@ nav a {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-end;
   }
 
   nav a {
     font-size: 12px;
+    white-space: nowrap;
   }
 }
+
+@media (max-width: 480px) {
+  nav {
+    padding: 15px 3%;
+    gap: 5px;
+  }
+
+  nav h2 {
+    font-size: 19px;
+  }
+
+  nav div {
+    gap: 6px;
+  }
+
+  nav a {
+    font-size: 10px;
+  }
+
   #home {
     padding: 60px 6%;
     min-height: 75vh;
