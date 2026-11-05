@@ -196,29 +196,34 @@ api.get('/projects/')
   <h2>My Projects</h2>
 
   <div className="projects-container">
-    {projects.map((project) => (
-      <div
-        className="project-card"
-        key={project.id}
-        onClick={() => {
-          if (project.github_link) {
-            window.open(
-              project.github_link,
-              "_blank",
-              "noopener,noreferrer"
-            );
-          }
-        }}
-        style={{
-          cursor: project.github_link ? "pointer" : "default"
-        }}
-      >
-        <h3>{project.title}</h3>
-        <p>{project.description}</p>
-        <span>{project.technologies}</span>
-      </div>
-    ))}
-  </div>
+  {projects.map((project) => (
+    <div
+      className="project-card"
+      key={project.id}
+      onClick={() => {
+        if (
+          project.github_link &&
+          project.github_link.startsWith("https://")
+        ) {
+          window.open(
+            project.github_link,
+            "_blank",
+            "noopener,noreferrer"
+          );
+        }
+      }}
+      style={{
+        cursor: project.github_link?.startsWith("https://")
+          ? "pointer"
+          : "default"
+      }}
+    >
+      <h3>{project.title}</h3>
+      <p>{project.description}</p>
+      <span>{project.technologies}</span>
+    </div>
+  ))}
+</div>
 </section>
 
 
