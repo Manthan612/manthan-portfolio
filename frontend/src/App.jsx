@@ -5,6 +5,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import api from './api/axios';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
 // NAV
 function App() {
 
